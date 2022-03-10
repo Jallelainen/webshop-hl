@@ -1,13 +1,24 @@
 import './App.css';
 
 /* ---- Components ---- */
+import {Header} from './Components/Header'
 
 function App() {
   return (
-    <div className="container">
-      <header className="App-header">
-        
-      </header>
+    <div className="container-fluid">
+      <Header/>
+      <div className="row">
+
+      </div>
+      <div className="row">
+
+      </div>
+      <div className="row">
+
+      </div>
+      <div className="row">
+
+      </div>
     </div>
   );
 }

@@ -1,11 +1,11 @@
 body {
-  font-family: 'Lato', 'Oswald';
+  font-family: 'Oswald', 'Lato';
 }
 
 p1, p2, p3 {
-  font-family: 'Lato';
+  font-family: 'Oswald';
 }
 
 p4, p5, p {
-  font-family: 'Oswald';
+  font-family: 'Lato';
 }
