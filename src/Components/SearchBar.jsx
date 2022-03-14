@@ -4,8 +4,8 @@ export const SearchBar = (props) => {
 
     return(
         <div className="row">
-            <div id="searchbar" className="col page-content">
-                <div className="input-group mb-3">
+            <div id="searchbar" className="col-xl-12 page-content">
+                <div className="input-group mb-1">
                     <input type="text" id="text-field-search" className="form-control" placeholder="Search product..." aria-label="Recipient's username" aria-describedby="button-addon-search"/>
                     <button className="btn btn-outline-secondary" type="button" id="button-addon-search">
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" className="bi bi-search" viewBox="0 0 16 16">

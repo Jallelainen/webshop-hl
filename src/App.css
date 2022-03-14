@@ -53,8 +53,10 @@ p {
 }
 
 .product-item{
-  max-height: 356px;
+  height: 356px;
   max-width: 371px;
+  margin: 0;
+  margin-bottom: 16px;
   border: 1px solid #ced4da;
   border-radius: 5px;
 }
@@ -68,7 +70,7 @@ p {
 #searchbar{
   max-width: 1172px;
   margin: auto;
-  margin-top: 16px;
+  margin-top: 64px;
   padding: 0;
 }
 
