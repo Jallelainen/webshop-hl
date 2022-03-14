@@ -4,7 +4,7 @@ export const SearchBar = (props) => {
 
     return(
         <div className="row">
-            <div id="searchbar" className="col">
+            <div id="searchbar" className="col page-content">
                 <div className="input-group mb-3">
                     <input type="text" id="text-field-search" className="form-control" placeholder="Search product..." aria-label="Recipient's username" aria-describedby="button-addon-search"/>
                     <button className="btn btn-outline-secondary" type="button" id="button-addon-search">

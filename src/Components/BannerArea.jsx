@@ -4,11 +4,15 @@ export const BannerArea = (props) => {
 
     return(
         <div className="row">
-            <div className="col-6">
-                
-            </div>
-            <div className="col-6">
-                
+            <div className="col page-content">
+                <div className="row">
+                    <div className="col-6">
+                        
+                    </div>
+                    <div className="col-6">
+                        
+                    </div>
+                </div>
             </div>
         </div>
     );
