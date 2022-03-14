@@ -42,7 +42,7 @@ p {
 }
 
 .page-content{
-  max-width: 1172px;
+  max-width: 1176px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 16px;
@@ -55,7 +55,6 @@ p {
 .product-item{
   height: 356px;
   max-width: 371px;
-  margin: 0;
   margin-bottom: 16px;
   border: 1px solid #ced4da;
   border-radius: 5px;
@@ -63,12 +62,11 @@ p {
 
 /* ---- ID's ---- */
 #navbar{
-  padding: calc(var(--bs-gutter-x) * 2);
-  padding-top: calc(var(--bs-gutter-x) * 1);
+  padding-right: calc(var(--bs-gutter-x) * 2.5);
 }
 
 #searchbar{
-  max-width: 1172px;
+  max-width: 1176px;
   margin: auto;
   margin-top: 64px;
   padding: 0;

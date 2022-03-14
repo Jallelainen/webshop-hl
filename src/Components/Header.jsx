@@ -3,7 +3,7 @@ import React from 'react';
 export const Header = () => {
     return (
        <div className="row">
-           <nav id="navbar" className="navbar fixed-top navbar-expand-lg navbar-light header-nav">
+           <nav id="navbar" className="navbar fixed-top navbar-expand-lg navbar-light header-nav m-1 m-lg-4">
                 <div className="container-fluid">
                     <a className="navbar-brand text-light h1" href="http://localhost:3000">SPORTSHOES.COM</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
