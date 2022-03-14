@@ -3,6 +3,9 @@ import './App.css';
 /* ---- Components ---- */
 import {Header} from './Components/Header'
 import {Carousel} from './Components/Carousel'
+import {SearchBar} from './Components/SearchBar'
+import {Products} from './Components/Products'
+import {BannerArea} from './Components/BannerArea'
 
 function App() {
 
@@ -10,15 +13,9 @@ function App() {
     <div className="container-fluid">
       <Header/>
       <Carousel/>
-      <div className="row">
-   
-      </div>
-      <div className="row">
-
-      </div>
-      <div className="row">
-
-      </div>
+      <SearchBar/>
+      <Products/>
+      <BannerArea/>
     </div>
   );
 }

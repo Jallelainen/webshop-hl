@@ -1,13 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
+
+/* ---- Selector Modifiers ---- */
 body {
   font-family: 'Oswald', 'Lato';
 }
 
-p1, p2, p3 {
-  font-family: 'Oswald';
+p {
+  font-family: 'Lato';
 }
 
-p4, p5, p {
-  font-family: 'Lato';
+/* ---- Classes ---- */
+.carousel-indicators [data-bs-target]{
+  box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px; 
+    padding: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    background-clip: padding-box;
+    border: 2px solid white;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active{
+  background-color: #fff;
+  opacity: 1;
+}
+
+/* ---- ID's ---- */
+
+#searchbar{
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 16px;
+  
+}
+
+#button-addon-search{
+  border: 1px solid #ced4da;
+  border-left: none;
+}
+
+#text-field-search{
+  border-right: none;
 }
