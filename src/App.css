@@ -5,6 +5,7 @@
 /* ---- Selector Modifiers ---- */
 body {
   font-family: 'Oswald', 'Lato';
+  overflow: scroll;
 }
 
 p {
@@ -84,6 +85,8 @@ p {
 #text-field-search{
   border-right: none;
 }
+
+/* ---- Media Queries ---- */
 
 @media screen and (max-width: 1400px) {
   #carousel-buttons{
