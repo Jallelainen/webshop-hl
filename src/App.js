@@ -15,15 +15,13 @@ function App() {
   useEffect(() => {
     ProductService.getProducts(setProducts);
   }, [setProducts]);
-
-  console.log(products);
   
   function changeColor() {
-    var navBar = document.getElementById("navbar-text-container").scrollTop;
+    var navBar = document.getElementById("carouselSlides").scrollTop;
     var carousel = document.getElementById("carouselSlides").scrollHeight;
     
     if (carousel > navBar) {
-      console.log("success " + navBar + carousel);
+      console.log("success " + navBar + " " + carousel);
     }
   };
 
@@ -32,7 +30,7 @@ function App() {
       <Header/>
       <Carousel/>
       <SearchBar/>
-      <Products/>
+      <Products products={products}/>
       <BannerArea/>
     </div>
   );

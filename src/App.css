@@ -54,7 +54,7 @@ p {
 }
 
 .product-item{
-  height: 356px;
+  max-height: 356px;
   max-width: 371px;
   margin-bottom: 16px;
   border: 1px solid #ced4da;

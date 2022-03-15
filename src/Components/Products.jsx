@@ -1,21 +1,36 @@
 import React from 'react';
 
 export const Products = (props) => {
+    
+
+    const ProductCards = (props) => {
+
+        const Cards = props.products.map((product) => {
+            return (
+                
+                <div className="card col-4 product-item" key={product.id}>
+                    <img src={product.product_image.url} className="card-img-top" alt={product.name}/>
+                    <div className="card-body">
+                        <h5 className="card-title">{product.name}</h5>
+                    </div>
+                </div>
+            
+                
+            )
+        });
+
+        return (
+            <div id="product-list" className="col page-content">
+                <div className="row product-row d-flex justify-content-center justify-content-xxl-between">
+                    {Cards}
+                </div>
+            </div>
+            );
+    };
 
     return(
         <div className="row">
-            <div id="product-list" className="col page-content">
-                <div className="row product-row d-flex justify-content-center justify-content-xxl-between">
-                    <div className="col-lg-4 mb-5 me-1 ms-1 me-lg-0 ms-lg-0 product-item"></div>
-                    <div className="col-lg-4 mb-5 me-1 ms-1 me-lg-0 ms-lg-0 product-item"></div>
-                    <div className="col-lg-4 mb-5 me-1 ms-1 me-lg-0 ms-lg-0 product-item"></div>
-                </div>
-                <div className="row product-row d-flex justify-content-center justify-content-xxl-between">
-                    <div className="col-lg-4 mb-5 me-1 ms-1 me-lg-0 ms-lg-0 product-item"></div>
-                    <div className="col-lg-4 mb-5 me-1 ms-1 me-lg-0 ms-lg-0 product-item"></div>
-                    <div className="col-lg-4 mb-5 me-1 ms-1 me-lg-0 ms-lg-0 product-item"></div>
-                </div>
-            </div>
+            <ProductCards products={props.products}/>
         </div>
     );
 };
