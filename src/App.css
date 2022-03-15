@@ -65,6 +65,10 @@ p {
   padding-right: calc(var(--bs-gutter-x) * 2.5);
 }
 
+#carousel-buttons{
+  transform: translate(-20rem, -7rem);
+}
+
 #searchbar{
   max-width: 1176px;
   margin: auto;
@@ -79,4 +83,34 @@ p {
 
 #text-field-search{
   border-right: none;
+}
+
+@media screen and (max-width: 1400px) {
+  #carousel-buttons{
+    transform: translate(-14rem, -5rem);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #carousel-buttons{
+    transform: translate(-10rem, -2rem);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #carousel-buttons{
+    transform: translate(-8rem, 0rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #carousel-buttons{
+    transform: translate(-5rem, 4rem);
+  }
+}
+
+@media screen and (max-width: 476px) {
+  #carousel-buttons{
+    transform: translate(2rem, 5rem);
+  }
 }

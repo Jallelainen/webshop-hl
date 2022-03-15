@@ -15,8 +15,12 @@ export const Carousel = (props) => {
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active">
+                <div className="carousel-item active ">
                     <img src={carousel1} className="d-block w-100" alt="Lebron shoes"/>
+                    <div id="carousel-buttons" className="carousel-caption pb-5 mb-5 me-5">
+                        <button className="btn btn-light ps-1 pe-1 ps-md-5 pe-md-5 me-3">BUY NOW</button>
+                        <button className="btn btn-outline-light ps-1 pe-1 ps-md-5 pe-md-5">LEARN MORE</button>
+                    </div>
                 </div>
                 <div className="carousel-item">
                     <img src={carousel2} className="d-block w-100" alt="Nike shoes"/>
