@@ -11,10 +11,20 @@ import {BannerArea} from './Components/BannerArea'
 
 function App() {
   const [products, setProducts] = useState([]);
-
+  
   useEffect(() => {
-    ProductService.getProducts(setProducts);
-  }, [setProducts]);
+        ProductService.getProducts(setProducts);
+      }, []);
+      
+  function handleChange(search){
+
+    if (search === "") {
+      ProductService.getProducts(setProducts);
+    }else{
+      ProductService.searchProducts(setProducts, search);
+    }
+        
+  }
   
   function changeColor() {
     var navBar = document.getElementById("carouselSlides").scrollTop;
@@ -29,7 +39,7 @@ function App() {
     <div onWheel={() => changeColor()} className="container-fluid">
       <Header/>
       <Carousel/>
-      <SearchBar/>
+      <SearchBar handleChange={handleChange}/>
       <Products products={products}/>
       <BannerArea/>
     </div>

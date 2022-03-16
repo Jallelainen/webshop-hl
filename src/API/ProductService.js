@@ -19,9 +19,11 @@ class ProductService {
 
     async searchProducts(setProducts, searchString){
 
-        return await axios.get('https://webshop.wm3.se/api/v1/shop/products/search.json?q=' + {searchString} + '&media_file=true')
+        return await axios
+        .get('https://webshop.wm3.se/api/v1/shop/products/search.json?q=' + searchString)
         .then(function (response){
-            setProducts(response.data.products)
+            setProducts(response.data.products);
+            console.log(response);
         }).catch(function (error){
             console.log(error)
         }).then(function (response){
