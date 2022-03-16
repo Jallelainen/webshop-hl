@@ -4,6 +4,7 @@
 
 /* ---- Selector Modifiers ---- */
 body {
+  color: #242424;
   font-family: 'Oswald', 'Lato';
   overflow: scroll;
 }
@@ -87,6 +88,22 @@ p {
 
 #product-grid{
   max-width: 1200px;
+}
+
+#likeSpider{
+  height: 659px;
+  width: 586px;
+  color: white;
+  background-image: url("/public/Pics/FightLikeSpider.jpg");
+  cursor: pointer;
+}
+
+#likeCheetah{
+  height: 659px;
+  width: 586px;
+  color: white;
+  background-image: url("/public/Pics/RunLikeCheetah.jpg");
+  cursor: pointer;
 }
 
 /* ---- Media Queries ---- */

@@ -27,16 +27,25 @@ function App() {
   }
   
   function changeColor() {
-    var navBar = document.getElementById("carouselSlides").scrollTop;
-    var carousel = document.getElementById("carouselSlides").scrollHeight;
-    
-    if (carousel > navBar) {
-      console.log("success " + navBar + " " + carousel);
+    var scrolledPx = window.scrollY;
+    var carouselHeight = document.getElementById("carouselSlides").scrollHeight;
+    var nav1 = document.getElementById("nav-a-1");
+    var nav2 = document.getElementById("nav-a-2");
+    var nav3 = document.getElementById("nav-a-3");   
+
+    if ((carouselHeight - 50) < scrolledPx) {
+      nav1.classList.remove("text-light");
+      nav2.classList.remove("text-light");
+      nav3.classList.remove("text-light");
+    }else{
+      nav1.classList.add("text-light");
+      nav2.classList.add("text-light");
+      nav3.classList.add("text-light");
     }
   };
 
   return (
-    <div onWheel={() => changeColor()} className="container-fluid">
+    <div onWheel={() => changeColor()} id="main-content" className="container-fluid">
       <Header/>
       <Carousel/>
       <SearchBar handleChange={handleChange}/>
