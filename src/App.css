@@ -54,9 +54,8 @@ p {
 }
 
 .product-item{
-  max-height: 356px;
-  max-width: 371px;
-  margin-bottom: 16px;
+  min-height: 356px;
+  width: 371px;
   border: 1px solid #ced4da;
   border-radius: 5px;
 }
@@ -84,6 +83,10 @@ p {
 
 #text-field-search{
   border-right: none;
+}
+
+#product-grid{
+  max-width: 1200px;
 }
 
 /* ---- Media Queries ---- */

@@ -7,21 +7,21 @@ export const Products = (props) => {
 
         const Cards = props.products.map((product) => {
             return (
-                
-                <div className="card col-4 product-item" key={product.id}>
-                    <img src={product.product_image.url} className="card-img-top" alt={product.name}/>
-                    <div className="card-body">
-                        <h5 className="card-title">{product.name}</h5>
+                <div className="col p-0 d-flex justify-content-center" key={product.id}>
+                    <div className="card mb-5 product-item">
+                        <img src={product.product_image.url} className="card-img-top" alt={product.name}/>
+                        <div className="card-body d-flex align-items-end">
+                            <h5 className="card-title">{product.name}</h5>
+                        </div>
                     </div>
                 </div>
-            
                 
             )
         });
 
         return (
-            <div id="product-list" className="col page-content">
-                <div className="row product-row d-flex justify-content-center justify-content-xxl-between">
+            <div id="product-grid" className="col page-content">
+                <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-3 product-row">
                     {Cards}
                 </div>
             </div>
