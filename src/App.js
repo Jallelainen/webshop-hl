@@ -14,7 +14,7 @@ function App() {
   const [isSearch, setIsSearch] = useState(false);
   
   useEffect(() => {
-        //ProductService.getProducts(setProducts);
+        ProductService.getProducts(setProducts);
       }, []);
       
   function handleChange(search){
