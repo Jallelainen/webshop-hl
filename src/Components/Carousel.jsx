@@ -19,8 +19,12 @@ export const Carousel = (props) => {
                 <div id="carousel-item" className="carousel-item active ">
                     <img src={carousel1} className="d-block w-100" alt="Lebron shoes"/>
                     <div id="carousel-buttons" className="carousel-caption pb-5 mb-5 me-5">
-                        <button className="btn btn-light ps-1 pe-1 ps-md-3 pe-md-3 ps-lg-5 pe-lg-5 me-3">BUY NOW</button>
-                        <button className="btn btn-outline-light ps-1 pe-1 ps-md-3 pe-md-3 ps-lg-5 pe-lg-5">LEARN MORE</button>
+                        <a href="http://localhost:3000">
+                            <button className="btn btn-light btn-lg ps-1 pe-1 ps-md-3 pe-md-3 ps-lg-5 pe-lg-5 me-3" >BUY NOW</button>
+                        </a>
+                        <a href="http://localhost:3000">
+                            <button className="btn btn-outline-light btn-lg ps-1 pe-1 ps-md-3 pe-md-3 ps-lg-5 pe-lg-5">LEARN MORE</button>
+                        </a>
                     </div>
                 </div>
                 <div id="carousel-item" className="carousel-item">

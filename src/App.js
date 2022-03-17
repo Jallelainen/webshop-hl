@@ -29,18 +29,14 @@ function App() {
   function changeColor() {
     var scrolledPx = window.scrollY;
     var carouselHeight = document.getElementById("carouselSlides").scrollHeight;
-    var nav1 = document.getElementById("nav-a-1");
-    var nav2 = document.getElementById("nav-a-2");
-    var nav3 = document.getElementById("nav-a-3");   
+    var nav = document.getElementById("navbar"); 
 
     if ((carouselHeight - 50) < scrolledPx) {
-      nav1.classList.remove("text-light");
-      nav2.classList.remove("text-light");
-      nav3.classList.remove("text-light");
+      nav.classList.remove("navbar-dark");
+      nav.classList.add("navbar-light");
     }else{
-      nav1.classList.add("text-light");
-      nav2.classList.add("text-light");
-      nav3.classList.add("text-light");
+      nav.classList.remove("navbar-light");
+      nav.classList.add("navbar-dark");
     }
   };
 

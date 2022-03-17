@@ -21,7 +21,7 @@ export const Products = (props) => {
 
         return (
             <div id="product-grid" className="col page-content">
-                <div className="row row-cols-1 row-cols-lg-2 row-cols-xl-3 product-row">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 product-row">
                     {Cards}
                 </div>
             </div>
