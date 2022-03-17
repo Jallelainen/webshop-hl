@@ -14,7 +14,7 @@ function App() {
   const [isSearch, setIsSearch] = useState(false);
   
   useEffect(() => {
-        ProductService.getProducts(setProducts);
+        //ProductService.getProducts(setProducts);
       }, []);
       
   function handleChange(search){
@@ -50,10 +50,10 @@ function App() {
       <SearchBar handleChange={handleChange}/>
       {products.length !== 0 ?  <Products products={products} /> : products.length === 0 && !isSearch?
       <div className="d-flex justify-content-center m-5">
-        <div className="spinner-grow" role="status">
+        <div className="spinner-border" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
-      </div> : <div className="d-flex justify-content-center m-5"><h2>No results..</h2></div>}
+      </div> : <div className="d-flex justify-content-center m-5"><h3>No results...</h3></div>}
       <BannerArea/>
     </div>
   );
