@@ -11,6 +11,7 @@ import {BannerArea} from './Components/BannerArea'
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [isSearch, setIsSearch] = useState(false);
   
   useEffect(() => {
         ProductService.getProducts(setProducts);
@@ -19,8 +20,10 @@ function App() {
   function handleChange(search){
 
     if (search === "") {
+      setIsSearch(false);
       ProductService.getProducts(setProducts);
     }else{
+      setIsSearch(true);
       ProductService.searchProducts(setProducts, search);
     }
         
@@ -45,7 +48,12 @@ function App() {
       <Header/>
       <Carousel/>
       <SearchBar handleChange={handleChange}/>
-      <Products products={products}/>
+      {products.length !== 0 ?  <Products products={products} /> : products.length === 0 && !isSearch?
+      <div className="d-flex justify-content-center m-5">
+        <div className="spinner-grow" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div> : <div className="d-flex justify-content-center m-5"><h2>No results..</h2></div>}
       <BannerArea/>
     </div>
   );
