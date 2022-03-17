@@ -8,12 +8,14 @@ export const Products = (props) => {
         const Cards = props.products.map((product) => {
             return (
                 <div className="col p-0 d-flex justify-content-center" key={product.id}>
-                    <div className="card mb-5 product-item">
-                        <img src={product.product_image.url} className="card-img-top" alt={product.name}/>
-                        <div className="card-body d-flex align-items-end">
-                            <h5 className="card-title">{product.name}</h5>
+                    <a href="http://localhost:3000">
+                        <div className="card mb-5 product-item">
+                            <img src={product.product_image.url} className="img-crop card-img-top" alt={product.name}/>
+                            <div className="card-body d-flex align-items-end">
+                                <h5 className="card-title">{product.name}</h5>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 
             )
