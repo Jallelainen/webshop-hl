@@ -2,7 +2,6 @@ import React from 'react';
 
 export const Products = (props) => {
     
-
     const ProductCards = (props) => {
 
         const Cards = props.products.map((product) => {

@@ -17,18 +17,22 @@ function App() {
         ProductService.getProducts(setProducts);
       }, []);
       
+  //Takes in users input and uses it as query in api call
   function handleChange(search){
 
+    //first checks if input field is empty
     if (search === "") {
-      setIsSearch(false);
-      ProductService.getProducts(setProducts);
+      setIsSearch(false); //if empty = not a search
+      ProductService.getProducts(setProducts); // get all products
     }else{
-      setIsSearch(true);
-      ProductService.searchProducts(setProducts, search);
+      setIsSearch(true);// if not empty = a search
+      ProductService.searchProducts(setProducts, search); // search products
     }
         
   }
   
+  //function that gets the height of the carousel then checks if the user has scrolled more than that value, 
+  //and if it has it changes the color of the navbar text
   function changeColor() {
     var scrolledPx = window.scrollY;
     var carouselHeight = document.getElementById("carouselSlides").scrollHeight;
@@ -43,6 +47,8 @@ function App() {
     }
   };
 
+  //A tearny op checks if its a search or if the api is loading
+  //if products array not 0? then show the products component. else if its 0 and not a search, then show a spinner. else if its 0 and it is a search, show no results
   return (
     <div onWheel={() => changeColor()} id="main-content" className="container-fluid">
       <Header/>

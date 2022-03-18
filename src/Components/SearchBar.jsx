@@ -2,7 +2,7 @@ import React from 'react';
 
 export const SearchBar = (props) => {
 
-
+    //input field uses onChange to trigger the handleChange function.
     return(
         <div className="row">
             <div id="searchbar" className="col page-content">
